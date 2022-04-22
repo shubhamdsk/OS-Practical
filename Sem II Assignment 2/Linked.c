@@ -3,7 +3,6 @@
 #include<string.h>
 
 #define MAX 100
-
 typedef struct dir
 {
  char fname[20];
@@ -75,16 +74,16 @@ if(nob>fb)
  }
  else
  {
-    for(i=0;i<n;i++)   //1 1 1 1 1 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 1 1 1 1 0 0 0 1 1 1 0 1 0 1 1 
+    for(i=0;i<n;i++)  
 	{
 	if(bit[i]==0 && nob!=0) 
          {
-		p = (NODE*)malloc(sizeof(NODE));   //i= 1 6             nob=4 3 2
-		strcpy(p->fname,fname);            //head= p(1)              last= p(1) p(6) 
-		nob--;                             //p->fname=F1
-		bit[i]=1;                           //p->start=1 6
-		p->start=i;                         //p->next=NULL
-		p->next=NULL;                       // 
+		p = (NODE*)malloc(sizeof(NODE));   
+		strcpy(p->fname,fname);                     
+		nob--;                            
+		bit[i]=1;                           
+		p->start=i;                         
+		p->next=NULL;                       
 		if(head==NULL)
                    head=p;                        
 		else
