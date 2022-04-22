@@ -12,7 +12,7 @@ void dislayBitVector()
      printf(" %d ",bv[i]);
 }//dislayBitVector
 
-void creteFile()
+void createFile()
 {
     char temp[30];
     printf("Enter the name of the file :");
@@ -105,7 +105,7 @@ int main()
         {
         case 1: dislayBitVector();
                 break;
-        case 2: creteFile();
+        case 2: createFile();
                 break;
         case 3: showDirectory();
                 break;
