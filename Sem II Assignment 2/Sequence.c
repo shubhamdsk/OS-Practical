@@ -48,7 +48,7 @@ void creteFile()
         }
       
     num++;
-}
+}//creteFile
 
 void showDirectory()
 {
@@ -63,7 +63,7 @@ void showDirectory()
                 printf("%s%40d%40d\n",name[i],start[i],length[i]);
             }
     }
-}
+}//showDirectory
 
 void deleteFile()
 {  
