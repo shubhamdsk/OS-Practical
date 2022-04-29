@@ -59,7 +59,7 @@ void create()
  int i,j,nob;
  int fb=0;
  printf("Enter file name:");
- scanf("%s",fname);
+ scanf("%s",&fname);
  printf("Enter no.of blocks:");
  scanf("%d",&nob);
  for(i=0;i<n;i++)
